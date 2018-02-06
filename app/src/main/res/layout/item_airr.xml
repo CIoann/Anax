@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:background="@drawable/tv_rc3"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="55dp"
+        android:layout_height="fill_parent"
+        android:layout_margin="2dp"
+        android:background="@drawable/tv_rc6"
+        android:contentDescription=""
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="2dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/usersline"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_rc6"
+            android:gravity="center_vertical"
+            android:text="Example application"
+            android:textColor="#8c4eb8"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userline"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:ellipsize="marquee"
+            android:maxEms="100"
+            android:singleLine="true"
+            android:text="Description"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

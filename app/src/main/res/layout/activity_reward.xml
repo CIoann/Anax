@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e9dfca"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="20"
+        android:background="#e9dfca"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#e9dfca"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgReward"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/imageborder"
+                android:contentDescription="@drawable/img_border"
+                android:padding="8dp"
+                android:src="@drawable/myquests" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/tv1"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/tv_rc1"
+                    android:text="Title:"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tVtitleReward"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/tv_rc1"
+                    android:text="YOU HAVE WON"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/tv1"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/tv_rc1"
+                    android:text="Place: "
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tVplaceReward"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/tv_rc1"
+                    android:text="TGI FRIDAYS"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/tv1"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/tv_rc1"
+                    android:text="Description "
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tVdesReward"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/tv_rc1"
+                    android:text="You can have 1 free dinner for two people"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/tv1"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/tv_rc1"
+                    android:text="Requested Points: "
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tVpointsReward"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/tv_rc1"
+                    android:text="1500"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="80"
+        android:background="#e9dfca"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bRejectReward"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.46"
+            android:background="@drawable/btn_2"
+            android:text="Reject"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bAcceptReward"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.52"
+            android:background="@drawable/btn_2"
+            android:text="Accept"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

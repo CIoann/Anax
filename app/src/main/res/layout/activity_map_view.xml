@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e9dfca"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="45"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cbbar"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:button="@drawable/cbbar"
+            android:padding="10dp"
+            android:text="" />
+
+        <CheckBox
+            android:id="@+id/cbcoffee"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:button="@drawable/cbcoffee"
+            android:padding="10dp"
+            android:text="" />
+
+        <CheckBox
+            android:id="@+id/cbcinema"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:button="@drawable/cbcinema"
+            android:padding="10dp"
+            android:text="" />
+
+        <CheckBox
+            android:id="@+id/cbclub"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:button="@drawable/cbclub"
+            android:padding="10dp"
+            android:text="" />
+
+        <CheckBox
+            android:id="@+id/cbrestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:button="@drawable/cbrestaurant" />
+        <!--
+        <ImageButton
+            android:id="@+id/bimgcoffee"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/tv_rc1"
+            android:padding="10dp"
+            android:src="@drawable/coffee" />
+
+        <ImageButton
+            android:id="@+id/bimgcinema"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/tv_rc1"
+            android:padding="10dp"
+            android:src="@drawable/cinema" />
+
+        <ImageButton
+            android:id="@+id/bimgclub"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/tv_rc1"
+            android:padding="10dp"
+            android:src="@drawable/bar_coktail" />
+
+        <ImageButton
+            android:id="@+id/bimgrestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/tv_rc1"
+            android:padding="10dp"
+            android:src="@drawable/restaurant" />
+
+        <ImageButton
+            android:id="@+id/bimgbar"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/tv_rc1"
+            android:padding="10dp"
+            android:src="@drawable/winebar" />      -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="12"
+        android:background="@drawable/tv_rc1"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="43"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="50"
+                android:background="@drawable/tv_rc1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/treasure" />
+
+                <Button
+                    android:id="@+id/bTrade"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_1"
+                    android:gravity="center"
+                    android:text="Trade"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="50"
+                android:background="@drawable/tv_rc1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/profile" />
+
+                <Button
+                    android:id="@+id/buInfo"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_1"
+                    android:gravity="center"
+                    android:text="Profile"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

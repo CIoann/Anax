@@ -1,0 +1,259 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".Tabs" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/tv_rc6"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_rc6" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tv_rc6"
+                    android:orientation="vertical" >
+
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/tv_rc6"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tv_rc6"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/imgUserLevel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="7dp"
+                                android:background="@drawable/imageborder"
+                                android:contentDescription="@drawable/tv_rc6"
+                                android:padding="8dp"
+                                android:src="@drawable/auctionhouse" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="7dp"
+                                android:background="@drawable/tv_rc6"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:weightSum="100" >
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="50"
+                                    android:background="@drawable/tv_rc5"
+                                    android:gravity="center"
+                                    android:text="Username:"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvProfileUserName"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="50"
+                                    android:background="@drawable/tv_rc5"
+                                    android:gravity="center"
+                                    android:text="KOKOS"
+                                    android:textAlignment="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="7dp"
+                                android:background="@drawable/tv_rc6"
+                                android:orientation="horizontal"
+                                android:weightSum="100" >
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="50"
+                                    android:background="@drawable/tv_rc5"
+                                    android:gravity="center"
+                                    android:text="Level: "
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvProfileUserLevel"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="50"
+                                    android:background="@drawable/tv_rc5"
+                                    android:gravity="center"
+                                    android:text="KOKOS"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="7dp"
+                                android:background="@drawable/tv_rc6"
+                                android:orientation="horizontal"
+                                android:weightSum="100" >
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="50"
+                                    android:background="@drawable/tv_rc5"
+                                    android:gravity="center"
+                                    android:text="Class: "
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvProfileUserClass"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="50"
+                                    android:background="@drawable/tv_rc5"
+                                    android:gravity="center"
+                                    android:text="KOKOS"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="7dp"
+                                android:background="@drawable/tv_rc6"
+                                android:orientation="horizontal"
+                                android:weightSum="100" >
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="50"
+                                    android:background="@drawable/tv_rc5"
+                                    android:gravity="center"
+                                    android:text="Points: "
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvProfileUserPoints"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="50"
+                                    android:background="@drawable/tv_rc5"
+                                    android:gravity="center"
+                                    android:text="1500"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/tv_rc6"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:weightSum="100" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tv_rc3"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/tv_rc2"
+                            android:gravity="center"
+                            android:text="Type"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/tv_rc2"
+                            android:gravity="center"
+                            android:text="Description"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/lsUserRewards"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tv_rc6" >
+                    </ListView>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

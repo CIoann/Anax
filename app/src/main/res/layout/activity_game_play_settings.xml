@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="#e9dfca"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="7dp"
+        android:background="@drawable/cyprus7"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ToggleButton
+            android:id="@+id/tgbMusic"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/tv_rc3"
+            android:textOff="@string/app_settings_music_on"
+            android:textOn="@string/app_settings_music_off" />
+
+        <ToggleButton
+            android:id="@+id/tgbSound"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/tv_rc3"
+            android:textOff="@string/app_settings_sounds_on"
+            android:textOn="@string/app_settings_sounds_off" />
+
+        <ToggleButton
+            android:id="@+id/tgbLanguage"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/tv_rc3"
+            android:textOff="@string/app_settings_language_en"
+            android:textOn="@string/app_settings_language_gr" />
+    </LinearLayout>
+
+</LinearLayout>
